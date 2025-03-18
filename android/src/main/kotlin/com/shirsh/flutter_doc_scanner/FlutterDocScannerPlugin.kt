@@ -83,7 +83,7 @@ class FlutterDocScannerPlugin : MethodCallHandler, ActivityResultListener,
                 .setResultFormats(
                     GmsDocumentScannerOptions.RESULT_FORMAT_JPEG,
                     GmsDocumentScannerOptions.RESULT_FORMAT_PDF
-                ).setScannerMode(GmsDocumentScannerOptions.SCANNER_MODE_FULL).build()
+                ).setScannerMode(GmsDocumentScannerOptions.SCANNER_MODE_BASE).build()
         val scanner = GmsDocumentScanning.getClient(options)
         val task: Task<IntentSender>? = activity?.let { scanner.getStartScanIntent(it) }
         task?.addOnSuccessListener { intentSender ->
@@ -114,7 +114,7 @@ class FlutterDocScannerPlugin : MethodCallHandler, ActivityResultListener,
                 .setResultFormats(
                     GmsDocumentScannerOptions.RESULT_FORMAT_JPEG,
                     GmsDocumentScannerOptions.RESULT_FORMAT_PDF
-                ).setScannerMode(GmsDocumentScannerOptions.SCANNER_MODE_FULL).build()
+                ).setScannerMode(GmsDocumentScannerOptions.SCANNER_MODE_BASE).build()
         val scanner = GmsDocumentScanning.getClient(options)
         val task: Task<IntentSender>? = activity?.let { scanner.getStartScanIntent(it) }
         task?.addOnSuccessListener { intentSender ->
@@ -145,7 +145,7 @@ class FlutterDocScannerPlugin : MethodCallHandler, ActivityResultListener,
                 .setResultFormats(
                     GmsDocumentScannerOptions.RESULT_FORMAT_JPEG,
                     GmsDocumentScannerOptions.RESULT_FORMAT_PDF
-                ).setScannerMode(GmsDocumentScannerOptions.SCANNER_MODE_FULL).build()
+                ).setScannerMode(GmsDocumentScannerOptions.SCANNER_MODE_BASE).build()
         val scanner = GmsDocumentScanning.getClient(options)
         val task: Task<IntentSender>? = activity?.let { scanner.getStartScanIntent(it) }
         task?.addOnSuccessListener { intentSender ->
@@ -176,7 +176,7 @@ class FlutterDocScannerPlugin : MethodCallHandler, ActivityResultListener,
                 .setResultFormats(
                     GmsDocumentScannerOptions.RESULT_FORMAT_JPEG,
                     GmsDocumentScannerOptions.RESULT_FORMAT_PDF
-                ).setScannerMode(GmsDocumentScannerOptions.SCANNER_MODE_FULL).build()
+                ).setScannerMode(GmsDocumentScannerOptions.SCANNER_MODE_BASE).build()
         val scanner = GmsDocumentScanning.getClient(options)
         val task: Task<IntentSender>? = activity?.let { scanner.getStartScanIntent(it) }
         task?.addOnSuccessListener { intentSender ->
@@ -395,7 +395,7 @@ class FlutterDocScannerPlugin : MethodCallHandler, ActivityResultListener,
 //                .setResultFormats(
 //                    GmsDocumentScannerOptions.RESULT_FORMAT_JPEG,
 //                    GmsDocumentScannerOptions.RESULT_FORMAT_PDF
-//                ).setScannerMode(GmsDocumentScannerOptions.SCANNER_MODE_FULL).build()
+//                ).setScannerMode(GmsDocumentScannerOptions.SCANNER_MODE_BASE).build()
 //        val scanner = GmsDocumentScanning.getClient(options)
 //        val task: Task<IntentSender>? = activity?.let { scanner.getStartScanIntent(it) }
 //        task?.addOnSuccessListener { intentSender ->
@@ -426,7 +426,7 @@ class FlutterDocScannerPlugin : MethodCallHandler, ActivityResultListener,
 //                .setResultFormats(
 //                    GmsDocumentScannerOptions.RESULT_FORMAT_JPEG,
 //                    GmsDocumentScannerOptions.RESULT_FORMAT_PDF
-//                ).setScannerMode(GmsDocumentScannerOptions.SCANNER_MODE_FULL).build()
+//                ).setScannerMode(GmsDocumentScannerOptions.SCANNER_MODE_BASE).build()
 //        val scanner = GmsDocumentScanning.getClient(options)
 //        val task: Task<IntentSender>? = activity?.let { scanner.getStartScanIntent(it) }
 //        task?.addOnSuccessListener { intentSender ->
